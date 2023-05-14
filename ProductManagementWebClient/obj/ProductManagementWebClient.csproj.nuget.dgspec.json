@@ -102,7 +102,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -225,7 +229,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj"
+              },
+              "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

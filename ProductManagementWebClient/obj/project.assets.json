@@ -1206,6 +1206,9 @@
       "DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BusinessObjects": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DataAccess.dll": {}
         },
@@ -1216,6 +1219,10 @@
       "Repositories/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "BusinessObjects": "1.0.0",
+          "DataAccess": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Repositories.dll": {}
         },
