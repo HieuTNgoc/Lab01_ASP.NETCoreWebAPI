@@ -10,3 +10,9 @@ D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\obj\Debug\net6.0\Repositories.dll
 D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\obj\Debug\net6.0\refint\Repositories.dll
 D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\obj\Debug\net6.0\Repositories.pdb
 D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\obj\Debug\net6.0\ref\Repositories.dll
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\bin\Debug\net6.0\appsettings.json
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\bin\Debug\net6.0\BusinessObjects.dll
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\bin\Debug\net6.0\DataAccess.dll
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\bin\Debug\net6.0\BusinessObjects.pdb
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\bin\Debug\net6.0\DataAccess.pdb
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete

@@ -10,3 +10,7 @@ D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\obj\Debug\net6.0\DataAccess.dll
 D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
 D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\obj\Debug\net6.0\DataAccess.pdb
 D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\bin\Debug\net6.0\appsettings.json
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\bin\Debug\net6.0\BusinessObjects.dll
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\bin\Debug\net6.0\BusinessObjects.pdb
+D:\PRN231\Lab01_ASP.NETCoreWebAPI\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
