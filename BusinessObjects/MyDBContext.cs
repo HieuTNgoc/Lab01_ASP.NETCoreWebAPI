@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +13,18 @@ namespace BusinessObjects
     public class MyDBContext:DbContext
     {
         public MyDBContext() { }
+
+        public MyDBContext(DbContextOptions<MyDBContext> options)
+          : base(options)
+        {
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-            IConfigurationRoot configuration = builder.Build();
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("MyStoreDB"));
+            var config = new ConfigurationBuilder()
+               .SetBasePath(Directory.GetCurrentDirectory())
+               .AddJsonFile("appsettings.json", true, true)
+               .Build();
+            optionsBuilder.UseSqlServer(config.GetConnectionString("MystoreDB"));
         }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Product> Products { get;set; }

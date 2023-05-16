@@ -21,6 +21,7 @@ namespace BusinessObjects
         public int UnitsInStoke { get; set; }
         [Required]
         public decimal UnitPrice { get; set; }
-        public virtual Category Category { get; set; }
+        public virtual Category? Category { get; set; }
+        
     }
 }

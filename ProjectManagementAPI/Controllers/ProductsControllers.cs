@@ -4,7 +4,7 @@ using Repositories;
 
 namespace ProjectManagementAPI.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/product/[action]")]
     [ApiController]
     public class ProductsControllers : ControllerBase
     {
@@ -28,7 +28,7 @@ namespace ProjectManagementAPI.Controllers
         }
 
         [HttpDelete("id")]
-        public IActionResult DeletaProduct(int id)
+        public IActionResult DeleteProduct(int id)
         {
             var p = repository.GetProductById(id);
             if (p == null)
