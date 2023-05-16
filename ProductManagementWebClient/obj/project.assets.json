@@ -1202,33 +1202,6 @@
         "runtime": {
           "bin/placeholder/BusinessObjects.dll": {}
         }
-      },
-      "DataAccess/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "BusinessObjects": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataAccess.dll": {}
-        }
-      },
-      "Repositories/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "BusinessObjects": "1.0.0",
-          "DataAccess": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Repositories.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Repositories.dll": {}
-        }
       }
     }
   },
@@ -3623,23 +3596,11 @@
       "type": "project",
       "path": "../BusinessObjects/BusinessObjects.csproj",
       "msbuildProject": "../BusinessObjects/BusinessObjects.csproj"
-    },
-    "DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../DataAccess/DataAccess.csproj",
-      "msbuildProject": "../DataAccess/DataAccess.csproj"
-    },
-    "Repositories/1.0.0": {
-      "type": "project",
-      "path": "../Repositories/Repositories.csproj",
-      "msbuildProject": "../Repositories/Repositories.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BusinessObjects >= 1.0.0",
-      "DataAccess >= 1.0.0",
-      "Repositories >= 1.0.0"
+      "BusinessObjects >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3671,12 +3632,6 @@
           "projectReferences": {
             "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj": {
               "projectPath": "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\BusinessObjects\\BusinessObjects.csproj"
-            },
-            "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\DataAccess\\DataAccess.csproj"
-            },
-            "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\Repositories\\Repositories.csproj": {
-              "projectPath": "D:\\PRN231\\Lab01_ASP.NETCoreWebAPI\\Repositories\\Repositories.csproj"
             }
           }
         }

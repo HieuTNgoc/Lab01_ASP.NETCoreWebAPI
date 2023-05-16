@@ -4,17 +4,22 @@ using Repositories;
 
 namespace ProjectManagementAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class ProductsControllers : ControllerBase
     {
      
         private IProductRepository repository = new ProductRepository();
-        // GET: api/Products
+        
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts() => repository.GetProducts();
 
-        // POST: ProductsController/Products
+        [HttpGet]
+        public ActionResult<IEnumerable<Category>> GetCategories() => repository.GetCategories();
+
+        [HttpGet("id")]
+        public ActionResult<Product> GetProductById(int id) => repository.GetProductById(id);
+
         [HttpPost]
         public IActionResult PostProduct(Product p)
         {
@@ -22,7 +27,6 @@ namespace ProjectManagementAPI.Controllers
             return NoContent();
         }
 
-        // GET: ProductsController/Delete/5
         [HttpDelete("id")]
         public IActionResult DeletaProduct(int id)
         {

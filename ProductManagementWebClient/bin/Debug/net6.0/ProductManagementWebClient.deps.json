@@ -8,9 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ProductManagementWebClient/1.0.0": {
         "dependencies": {
-          "BusinessObjects": "1.0.0",
-          "DataAccess": "1.0.0",
-          "Repositories": "1.0.0"
+          "BusinessObjects": "1.0.0"
         },
         "runtime": {
           "ProductManagementWebClient.dll": {}
@@ -724,16 +722,6 @@
         "runtime": {
           "BusinessObjects.dll": {}
         }
-      },
-      "DataAccess/1.0.0": {
-        "runtime": {
-          "DataAccess.dll": {}
-        }
-      },
-      "Repositories/1.0.0": {
-        "runtime": {
-          "Repositories.dll": {}
-        }
       }
     }
   },
@@ -1220,16 +1208,6 @@
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
     },
     "BusinessObjects/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DataAccess/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Repositories/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
