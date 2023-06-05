@@ -19,16 +19,16 @@
 	<thead>
 		<tr>
 			<th>
-				@Html.DisplayNameFor(model=>model.ProductId)
+				@Html.DisplayNameFor(model=>model.ProductName)
 			</th>
 			<th>
-				@Html.DisplayNameFor(model=>model.ProductName)
+				@Html.DisplayNameFor(model=>model.UnitsInStoke)
 			</th>
 			<th>
 				@Html.DisplayNameFor(model=>model.UnitPrice)
 			</th>
 			<th>
-				@Html.DisplayNameFor(model=>model.UnitsInStoke)
+				@Html.DisplayNameFor(model=>model.Category)
 			</th>
 			<th></th>
 		</tr>
@@ -37,16 +37,16 @@
 		@foreach(var item in Model){
 			<tr>
 				<td>
-					@Html.DisplayFor(modelItem=>item.ProductId)
+					@Html.DisplayFor(modelItem=>item.ProductName)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem=>item.ProductName)
+					@Html.DisplayFor(modelItem=>item.UnitsInStoke)
 				</td>
 				<td>
 					@Html.DisplayFor(modelItem=>item.UnitPrice)
 				</td>
 				<td>
-					@Html.DisplayFor(modelItem=>item.UnitsInStoke)
+					<select class="form-control" asp-items="ViewBag.CategoryId" asp-for="@item.CategoryId" disabled></select>
 				</td>
 				<td>
 					@Html.ActionLink("Details", "Details", new { id = item.ProductId}) |

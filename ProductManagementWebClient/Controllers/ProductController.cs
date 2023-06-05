@@ -1,5 +1,6 @@
 ﻿using BusinessObjects;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net.Http.Headers;
 using System.Text.Json;
 
@@ -27,7 +28,15 @@ namespace ProductManagementWebClient.Controllers
                 products = response.Content.ReadFromJsonAsync<List<Product>>().Result;
             }
 
-            return View(products);
+			HttpResponseMessage response2 = await client.GetAsync(ProductApiUrl + "/GetCategories");
+			List<Category>? categories = new List<Category>();
+			if (response2.StatusCode == System.Net.HttpStatusCode.OK)
+			{
+				categories = response2.Content.ReadFromJsonAsync<List<Category>>().Result;
+			}
+			ViewData["CategoryId"] = new SelectList(categories, "CategoryId", "CategoryName");
+
+			return View(products);
         }
 
         // GET: ProductController/Details/5
