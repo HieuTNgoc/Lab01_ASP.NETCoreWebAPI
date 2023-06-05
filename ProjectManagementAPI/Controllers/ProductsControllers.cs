@@ -10,7 +10,7 @@ namespace ProjectManagementAPI.Controllers
     {
      
         private IProductRepository repository = new ProductRepository();
-        
+
         [HttpGet]
         public ActionResult<IEnumerable<Product>> GetProducts() => repository.GetProducts();
 
@@ -19,8 +19,8 @@ namespace ProjectManagementAPI.Controllers
 
         [HttpGet("id")]
         public ActionResult<Product> GetProductById(int id) => repository.GetProductById(id);
-
-        [HttpPost]
+		
+		[HttpPost]
         public IActionResult PostProduct(Product p)
         {
             repository.SaveProduct(p);
@@ -52,4 +52,20 @@ namespace ProjectManagementAPI.Controllers
         }
 
     }
+
+	[Route("api/pro")]
+	[ApiController]
+	public class ProControllers : ControllerBase
+	{
+
+		private IProductRepository repository = new ProductRepository();
+
+		[HttpGet("get-product-by-id/{id}/detail")]
+		public ActionResult<Product> GetPById(int id)
+        {
+			return repository.GetProductById(id);
+		}  
+
+
+	}
 }
